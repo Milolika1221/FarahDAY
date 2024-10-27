@@ -23,6 +23,7 @@ HOST = '127.0.0.1'
 PORT = '5000'
 if (len(sys.argv) > 1):
     HOST, PORT = sys.argv[1].split(":")
+URL = 'http://' + HOST + ':' + PORT
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 users_data = []
@@ -57,12 +58,13 @@ def save_user(chat_source, chat_id, name, message):
             send_user_gmail(chat_id, bot_answer)
         dbmanager.add_message(name, chat_source, chat_id, message)
         dbmanager.add_chat_type(chat_source, chat_id, message_type)
-        dbmanager.add_message(bot_name, chat_source, chat_id, bot_answer)
-        dbmanager.change_status(chat_source, chat_id, 'open')
-        socketio.emit(
-            'new_message', 
-            {'source': bot_name, 'chat_source': chat_source, 'chat_id': chat_id, 'text': bot_answer}
-        )
+        if (len(bot_answer) > 0):
+            dbmanager.add_message(bot_name, chat_source, chat_id, bot_answer)
+            dbmanager.change_status(chat_source, chat_id, 'open')
+            socketio.emit(
+                'new_message', 
+                {'source': bot_name, 'chat_source': chat_source, 'chat_id': chat_id, 'text': bot_answer}
+            )
 
 @socketio.on('connect')
 def handle_connect():
@@ -179,11 +181,11 @@ def run_bots():
         process.terminate()  
         process.wait()      
     if len(tg_bot_token) > 0:
-        processes.append(subprocess.Popen(['python', 'BotTelegram.py', tg_bot_token]))
+        processes.append(subprocess.Popen(['python', 'BotTelegram.py', tg_bot_token, URL]))
     if len(vk_bot_token) > 0:
-        processes.append(subprocess.Popen(['python', 'VkBot.py', vk_bot_token]))
+        processes.append(subprocess.Popen(['python', 'VkBot.py', vk_bot_token, URL]))
     if len(EMAIL_ADDRESS) > 0 and len(APP_PASSWORD) > 0:
-        processes.append(subprocess.Popen(['python', 'GmailBot.py', EMAIL_ADDRESS, APP_PASSWORD]))
+        processes.append(subprocess.Popen(['python', 'GmailBot.py', EMAIL_ADDRESS, APP_PASSWORD, URL]))
     res_data = jsonify({'message': 'Боты запущены'})
     return res_data
 

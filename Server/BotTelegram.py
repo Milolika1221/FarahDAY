@@ -26,7 +26,7 @@ def answer(message):
 def send_data(user_data):
     # Отправляем данные на сервер
     try:
-        response = requests.post('http://127.0.0.1:5000/telegram', json=user_data)
+        response = requests.post(sys.argv[2] + '/telegram', json=user_data)
         if response.status_code == 200:
             print("Данные успешно отправлены на сервер.")
         else:
