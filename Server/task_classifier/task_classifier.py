@@ -7,11 +7,14 @@ class TaskClassifier:
 
     def __init__(self):
         dir_path = os.path.dirname(os.path.abspath(__file__))
-        model_path = os.path.join(dir_path, 'task_classifier.onnx')
         tokenizer_path = os.path.join(dir_path, 'tokenizer.json')
-        self.session = onnxruntime.InferenceSession(model_path)
-        self.input_name = self.session.get_inputs()[0].name
-        self.output_name = self.session.get_outputs()[0].name
+        try:
+            model_path = os.path.join(dir_path, 'task_classifier.onnx')
+            self.session = onnxruntime.InferenceSession(model_path)
+            self.input_name = self.session.get_inputs()[0].name
+            self.output_name = self.session.get_outputs()[0].name
+        except Exception:
+            print('Не удалось загрузить task_classifier.onnx')
         self.tokenizer = Tokenizer.from_file(tokenizer_path)
         self.dict = {
             0: 'варианты доставки',

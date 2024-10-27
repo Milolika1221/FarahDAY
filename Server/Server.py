@@ -84,7 +84,6 @@ def send_user_telegram(chat_id, message_bot):
         'chat_id': chat_id,
         'text': message_bot
     }
-    print(payload)
     response = requests.post(f'https://api.telegram.org/bot{tg_bot_token}/sendMessage', json=payload)
     if response.status_code == 200:
         print("Сообщение успешно отправлено пользователю.")
@@ -108,7 +107,6 @@ def send_user_vk(id, text):
 @app.route('/gmail', methods=['POST'])
 def save_user_gmail():
     data = request.json
-    print(data)
     chat_source = 'mail'
     chat_id = str(data['email_address'])
     name = str(data['name'])
