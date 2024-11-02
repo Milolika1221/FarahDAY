@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Workspace\pfd\Omnichat\OmniApp\obj\Debug\
+D:\Workspace\pfd\FarahDAY\Omnichat\OmniApp\obj\Debug\
 OmniApp
 none
 false
 DEBUG;TRACE
-D:\Workspace\pfd\Omnichat\OmniApp\App.xaml
-8167700337
+D:\Workspace\pfd\FarahDAY\Omnichat\OmniApp\App.xaml
+8-354085799
 
-171736875934
-32-1748542280
-ChatWindow.xaml;ClientMenuElem.xaml;ExitAccount.xaml;MainWindow.xaml;MessageFromUser.xaml;Setting.xaml;UserAccount.xaml;WithoutChat.xaml;
+181115195333
+32-388480028
+Views\ChatWindow.xaml;Views\ClientMenuElem.xaml;Views\ExitAccount.xaml;Views\MainWindow.xaml;Views\MessageFromUser.xaml;Views\Setting.xaml;Views\UserAccount.xaml;Views\WithoutChat.xaml;
 
-True
+False
 

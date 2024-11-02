@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\setting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\setting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\services\\serverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\services\\serverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\serverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\serverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\chatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\models\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\assets\\converters\\messagesourcetobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\assets\\converters\\messagesourcetobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\assets\\converters\\messagetemplateselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\assets\\converters\\messagetemplateselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\views\\setting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\views\\setting.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\chatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\chatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|d:\\workspace\\pfd\\farahday\\omnichat\\omniapp\\views\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\views\\chatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\clientmenuelem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\clientmenuelem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\messagesourcetobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\messagesourcetobackgroundconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\omniapp\\messagetemplateselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8BBC990-7F9D-4C04-94EB-17035EFC4DDA}|OmniApp\\OmniApp.csproj|solutionrelative:omniapp\\messagetemplateselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "OmniApp\\App.xaml.cs",
@@ -83,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "UserAccount.xaml.cs",
               "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\UserAccount.xaml.cs",
               "RelativeDocumentMoniker": "OmniApp\\UserAccount.xaml.cs",
@@ -96,12 +104,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ChatWindow.xaml",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ChatWindow.xaml",
-              "RelativeDocumentMoniker": "OmniApp\\ChatWindow.xaml",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ChatWindow.xaml",
-              "RelativeToolTip": "OmniApp\\ChatWindow.xaml",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Views\\ChatWindow.xaml",
+              "RelativeDocumentMoniker": "OmniApp\\Views\\ChatWindow.xaml",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Views\\ChatWindow.xaml",
+              "RelativeToolTip": "OmniApp\\Views\\ChatWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-24T14:16:09.774Z",
               "IsPinned": true,
@@ -109,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ChatWindow.xaml.cs",
               "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ChatWindow.xaml.cs",
               "RelativeDocumentMoniker": "OmniApp\\ChatWindow.xaml.cs",
@@ -118,18 +126,17 @@
               "ViewState": "AQIAAJ0AAAAAAAAAAAAUwKsAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T14:11:56.865Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ServerConnection.cs",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ServerConnection.cs",
-              "RelativeDocumentMoniker": "OmniApp\\ServerConnection.cs",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ServerConnection.cs",
-              "RelativeToolTip": "OmniApp\\ServerConnection.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAgwI8AAABlAAAA",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Services\\ServerConnection.cs",
+              "RelativeDocumentMoniker": "OmniApp\\Services\\ServerConnection.cs",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Services\\ServerConnection.cs",
+              "RelativeToolTip": "OmniApp\\Services\\ServerConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T22:01:59.989Z",
               "IsPinned": true,
@@ -137,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "OmniApp\\MainWindow.xaml",
@@ -149,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "OmniApp\\MainWindow.xaml.cs",
@@ -161,28 +168,43 @@
               "IsPinned": true
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Models\\Chat.cs",
+              "RelativeDocumentMoniker": "OmniApp\\Models\\Chat.cs",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Models\\Chat.cs",
+              "RelativeToolTip": "OmniApp\\Models\\Chat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T10:38:53.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "OmniApp\\Models\\Message.cs",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Models\\Message.cs",
+              "RelativeToolTip": "OmniApp\\Models\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T10:47:16.83Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Setting.xaml",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Setting.xaml",
-              "RelativeDocumentMoniker": "OmniApp\\Setting.xaml",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Setting.xaml",
-              "RelativeToolTip": "OmniApp\\Setting.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-26T08:36:21.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Setting.xaml.cs",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Setting.xaml.cs",
-              "RelativeDocumentMoniker": "OmniApp\\Setting.xaml.cs",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Setting.xaml.cs",
-              "RelativeToolTip": "OmniApp\\Setting.xaml.cs",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Views\\Setting.xaml.cs",
+              "RelativeDocumentMoniker": "OmniApp\\Views\\Setting.xaml.cs",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Views\\Setting.xaml.cs",
+              "RelativeToolTip": "OmniApp\\Views\\Setting.xaml.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T10:35:27.792Z",
@@ -190,18 +212,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WithoutChat.xaml",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\WithoutChat.xaml",
-              "RelativeDocumentMoniker": "OmniApp\\WithoutChat.xaml",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\WithoutChat.xaml",
-              "RelativeToolTip": "OmniApp\\WithoutChat.xaml",
+              "DocumentIndex": 15,
+              "Title": "ClientMenuElem.xaml",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ClientMenuElem.xaml",
+              "RelativeDocumentMoniker": "OmniApp\\ClientMenuElem.xaml",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ClientMenuElem.xaml",
+              "RelativeToolTip": "OmniApp\\ClientMenuElem.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-24T21:32:40.573Z"
+              "WhenOpened": "2024-10-25T00:19:35.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "MessageSourceToBackgroundConverter.cs",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Assets\\Converters\\MessageSourceToBackgroundConverter.cs",
+              "RelativeDocumentMoniker": "OmniApp\\Assets\\Converters\\MessageSourceToBackgroundConverter.cs",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Assets\\Converters\\MessageSourceToBackgroundConverter.cs",
+              "RelativeToolTip": "OmniApp\\Assets\\Converters\\MessageSourceToBackgroundConverter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T21:31:49.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MessageTemplateSelector.cs",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Assets\\Converters\\MessageTemplateSelector.cs",
+              "RelativeDocumentMoniker": "OmniApp\\Assets\\Converters\\MessageTemplateSelector.cs",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Assets\\Converters\\MessageTemplateSelector.cs",
+              "RelativeToolTip": "OmniApp\\Assets\\Converters\\MessageTemplateSelector.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T19:53:31.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ClientMenuElem.xaml.cs",
               "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ClientMenuElem.xaml.cs",
               "RelativeDocumentMoniker": "OmniApp\\ClientMenuElem.xaml.cs",
@@ -213,38 +261,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ClientMenuElem.xaml",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ClientMenuElem.xaml",
-              "RelativeDocumentMoniker": "OmniApp\\ClientMenuElem.xaml",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\ClientMenuElem.xaml",
-              "RelativeToolTip": "OmniApp\\ClientMenuElem.xaml",
+              "DocumentIndex": 9,
+              "Title": "WithoutChat.xaml",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\WithoutChat.xaml",
+              "RelativeDocumentMoniker": "OmniApp\\WithoutChat.xaml",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\WithoutChat.xaml",
+              "RelativeToolTip": "OmniApp\\WithoutChat.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-25T00:19:35.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MessageSourceToBackgroundConverter.cs",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\MessageSourceToBackgroundConverter.cs",
-              "RelativeDocumentMoniker": "OmniApp\\MessageSourceToBackgroundConverter.cs",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\MessageSourceToBackgroundConverter.cs",
-              "RelativeToolTip": "OmniApp\\MessageSourceToBackgroundConverter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T21:31:49.848Z"
+              "WhenOpened": "2024-10-24T21:32:40.573Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "MessageTemplateSelector.cs",
-              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\MessageTemplateSelector.cs",
-              "RelativeDocumentMoniker": "OmniApp\\MessageTemplateSelector.cs",
-              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\MessageTemplateSelector.cs",
-              "RelativeToolTip": "OmniApp\\MessageTemplateSelector.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T19:53:31.747Z"
+              "Title": "Setting.xaml",
+              "DocumentMoniker": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Setting.xaml",
+              "RelativeDocumentMoniker": "OmniApp\\Setting.xaml",
+              "ToolTip": "D:\\Workspace\\pfd\\FarahDAY\\Omnichat\\OmniApp\\Setting.xaml",
+              "RelativeToolTip": "OmniApp\\Setting.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-26T08:36:21.988Z"
             }
           ]
         },

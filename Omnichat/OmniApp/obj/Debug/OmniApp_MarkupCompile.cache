@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Workspace\pfd\FarahDAY\Omnichat\OmniApp\App.xaml
-8167700337
+8-354085799
 
-16-184902187
+17-806582788
 32-388480028
-ChatWindow.xaml;ClientMenuElem.xaml;ExitAccount.xaml;MainWindow.xaml;MessageFromUser.xaml;Setting.xaml;UserAccount.xaml;WithoutChat.xaml;
+Views\ChatWindow.xaml;Views\ClientMenuElem.xaml;Views\ExitAccount.xaml;Views\MainWindow.xaml;Views\MessageFromUser.xaml;Views\Setting.xaml;Views\UserAccount.xaml;Views\WithoutChat.xaml;
 
 False
 
