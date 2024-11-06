@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -40,55 +40,56 @@ namespace OmniApp
         }
 
 
-    private Timer _updateTimer;
+        private Timer _updateTimer;
 
-    private async void CreateMenuElements()
-    {
-        _updateTimer = new Timer(10000); 
-        _updateTimer.Elapsed += async (sender, e) => await UpdateChats();
-        _updateTimer.AutoReset = true; 
-        _updateTimer.Enabled = true; 
-
-        await UpdateChats(); 
-    }
-
-    private async Task UpdateChats()
-    {
-        var chats = await ServerConnection.GetChats();
-        Chats = new ObservableCollection<Chat>(chats ?? new List<Chat>());
-
-        var AwaitingChats = Chats.Where(chat => chat.Status == "awaiting");
-        var OpenChats = Chats.Where(chat => chat.Status == "open");
-        var ClosedChats = Chats.Where(chat => chat.Status == "closed");
-        var OfflineChats = Chats.Where(chat => chat.Status == "offline");
-
-        Application.Current.Dispatcher.Invoke(() =>
+        private async void CreateMenuElements()
         {
-            UpdateMenuElements(AwaitingChats, OpenChats, ClosedChats, OfflineChats);
-        });
-    }
+            _updateTimer = new Timer(10000);
+            _updateTimer.Elapsed += async (sender, e) => await UpdateChats();
+            _updateTimer.AutoReset = true;
+            _updateTimer.Enabled = true;
 
-    private void UpdateMenuElements(IEnumerable<Chat> awaitingChats, IEnumerable<Chat> openChats, IEnumerable<Chat> closedChats, IEnumerable<Chat> offlineChats)
-    {
-        MenuPlace.Children.Clear();
+            await UpdateChats();
+        }
 
-        AddMenuElement("Ожидают ответа", awaitingChats);
-        AddMenuElement("В диалоге", openChats);
-        AddMenuElement("Закрытые диалоги", closedChats);
-        AddMenuElement("Офлайн-обращения", offlineChats);
-    }
-
-    private void AddMenuElement(string header, IEnumerable<Chat> chats)
-    {
-        ClientMenuElem menuElem = new ClientMenuElem
+        private async Task UpdateChats()
         {
-            Text = header,
-            listBox = { ItemsSource = chats }
-        };
-        menuElem.SelectionChangedEvent += OnChatSelected;
-        //menuElem.listBox.Height = 30 * menuElem.listBox.Items.Count; ;
-        MenuPlace.Children.Add(menuElem);
-    }
+            var chats = await ServerConnection.GetChats();
+            Chats = new ObservableCollection<Chat>(chats ?? new List<Chat>());
+
+            var AwaitingChats = Chats.Where(chat => chat.Status == "awaiting");
+            var OpenChats = Chats.Where(chat => chat.Status == "open");
+            var ClosedChats = Chats.Where(chat => chat.Status == "closed");
+            var OfflineChats = Chats.Where(chat => chat.Status == "offline");
+
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                UpdateMenuElements(AwaitingChats, OpenChats, ClosedChats, OfflineChats);
+            });
+        }
+
+        private void UpdateMenuElements(IEnumerable<Chat> awaitingChats, IEnumerable<Chat> openChats, IEnumerable<Chat> closedChats, IEnumerable<Chat> offlineChats)
+        {
+            MenuPlace.Children.Clear();
+            AddMenuElement("Ожидают ответа", awaitingChats);
+            AddMenuElement("В диалоге", openChats);
+            AddMenuElement("Закрытые диалоги", closedChats);
+            AddMenuElement("Офлайн-обращения", offlineChats);
+        }
+
+        private void AddMenuElement(string header, IEnumerable<Chat> chats)
+        {
+            ClientMenuElem menuElem = new ClientMenuElem
+            {
+                Text = header,
+                listBox = { ItemsSource = chats }
+            };
+            menuElem.SelectionChangedEvent += OnChatSelected;
+            Style listBoxStyle = new Style(typeof(ListBoxItem));
+            listBoxStyle.Setters.Add(new Setter(Control.FontFamilyProperty, new FontFamily("Georgia")));
+            //menuElem.listBox.Height = 30 * menuElem.listBox.Items.Count; ;
+            MenuPlace.Children.Add(menuElem);
+        }
 
 
         private void OnChatSelected(object sender, Chat selectedChat)
@@ -181,5 +182,49 @@ namespace OmniApp
         {
 
         }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
+        private void SetWindowSize()
+        {
+            double screenWidth = SystemParameters.PrimaryScreenWidth;
+            double screenHeight = SystemParameters.PrimaryScreenHeight;
+
+            bor.Width = screenWidth;
+            bor.Height = screenHeight;
+        }
+
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            Height = 650;
+            Width = 1200;
+            bor.Width = Width;
+            bor.Height = Height;
+        }
+
+        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
+                SetWindowSize();
+            }
+            else
+            {
+                WindowState = WindowState.Normal;
+            }
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application app = Application.Current;
+            app.Shutdown();
+        }
+
+
     }
 }
