@@ -1,118 +1,138 @@
-﻿<Window x:Class="OmniApp.MainWindow"
+<Window x:Class="OmniApp.MainWindow"
         MouseDown="Window_MouseLeftButton"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:uc="clr-namespace:OmniApp"
-        Height="650" Width="1200" ResizeMode="CanResize"
+        Height="650"
+        Width="1200"
+        ResizeMode="CanResize"
         AllowsTransparency="True"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent">
-    <Border Height="650" Width="1200" CornerRadius="20"
+        Background="Transparent"
+        SizeChanged="Window_SizeChanged">
+    <Border Height="650" Width="1200" CornerRadius="20" Name="bor"
             Background="#ffffff">
-        <Grid Height="650" Width="1200">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="280"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <Viewbox Stretch="Uniform">
+            <Grid Height="650" Width="1200" x:Name="Main">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="280"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <Border Background="White" Grid.Column="0"
+                <Border Background="White" Grid.Column="0"
                     CornerRadius="20"
                 Grid.Row="0">
-                <Grid>
-                    <Button Background="Transparent" Name="Bt1" BorderBrush="White"
+                    <Grid>
+                        <Button Background="Transparent" Name="Bt1" BorderBrush="White"
                         Click="MenuButton_Click" >
-                        <Button.Resources>
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="18"/>
-                            </Style>
-                        </Button.Resources>
-                        <Grid>
-                            <TextBlock Text="_" Foreground="#5676c0" FontSize="50"
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="18"/>
+                                </Style>
+                            </Button.Resources>
+                            <Grid>
+                                <TextBlock Text="_" Foreground="#5676c0" FontSize="50"
                        Margin="13, -33 10 0" FontWeight="Bold"/>
-                            <TextBlock Text="_" Foreground="#5676c0" FontSize="50"
+                                <TextBlock Text="_" Foreground="#5676c0" FontSize="50"
                        Margin="13 -43 10 0"/>
-                            <TextBlock Text="_" Foreground="#5676c0" FontSize="50"
+                                <TextBlock Text="_" Foreground="#5676c0" FontSize="50"
                        Margin="13 -53 10 0"/>
-                        </Grid>
-                    </Button>
-                </Grid>
-            </Border>
-            <Grid Grid.Column="1" Grid.Row="1"
+                            </Grid>
+                        </Button>
+                    </Grid>
+                </Border>
+                <Grid Grid.Column="1" Grid.Row="1"
                   VerticalAlignment="Stretch">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="77*"/>
-                    <RowDefinition Height="514*"/>
-                </Grid.RowDefinitions>
-                <ScrollViewer Grid.RowSpan="2" Name ="grid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="77*"/>
+                        <RowDefinition Height="514*"/>
+                    </Grid.RowDefinitions>
+                    <ScrollViewer Grid.RowSpan="2" Name ="grid">
                         <StackPanel VerticalAlignment="Top" Name="MenuPlace">
                         </StackPanel>
                     </ScrollViewer>
-                <Image Source="Fon.png" RenderTransformOrigin="0.036,-1.434" Margin="-51,0,-878,0" Name="img" Grid.RowSpan="5">
-                    <Image.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform ScaleX="-1"/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Image.RenderTransform>
-                </Image>
-                <Label Content="Недавние" FontSize="15" Foreground="White" Margin="-3,62,0,450" Grid.RowSpan="2" Name="label1"></Label>
-                <Label Content="Статистика" FontSize="15" Foreground="White" Margin="-3,110,0,430" Grid.RowSpan="2" Name="label2"></Label>
-                <Label Content="Настройки" FontSize="15" Foreground="White" Margin="-3,160,0,390" Grid.RowSpan="2" Name="label3"></Label>
-                <Label Content="Помощь" FontSize="15" Foreground="White" Margin="-3,210,0,320" Grid.RowSpan="2" Name="label4"></Label>
-            </Grid>
-            <Grid x:Name="MainGrid" Grid.Column="2" Grid.Row="1"
+                    <Image Source="Fon.png" RenderTransformOrigin="0.036,-1.434" Margin="-51,0,-878,0" Name="img" Grid.RowSpan="5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Label Content="Недавние" FontSize="15" Foreground="White" Margin="-3,62,0,450" Grid.RowSpan="2" Name="label1" ></Label>
+                    <Label Content="Статистика" FontSize="15" Foreground="White" Margin="-3,110,0,430" Grid.RowSpan="2" Name="label2" ></Label>
+                    <Label Content="Настройки" FontSize="15" Foreground="White" Margin="-3,160,0,390" Grid.RowSpan="2" Name="label3"></Label>
+                    <Label Content="Помощь" FontSize="15" Foreground="White" Margin="-3,210,0,320" Grid.RowSpan="2" Name="label4" ></Label>
+                </Grid>
+                <Grid x:Name="MainGrid" Grid.Column="2" Grid.Row="1"
                   Background="White">
 
-                <uc:WithoutChat x:Name="WithoutChat" Visibility="Visible"/>
-                <uc:ChatWindow x:Name="ChatWindow" Visibility="Collapsed"/>
-                <uc:Setting x:Name="SettingWindow" Visibility="Collapsed"/>
-                <StackPanel VerticalAlignment="Top" Name="ProfilPlace" Margin="600, -29, 0, 0">
-                </StackPanel>
+                    <uc:WithoutChat x:Name="WithoutChat" Visibility="Visible"/>
+                    <uc:ChatWindow x:Name="ChatWindow" Visibility="Collapsed"/>
+                    <uc:Setting x:Name="SettingWindow" Visibility="Collapsed"/>
+                    <Border>
+                        <StackPanel VerticalAlignment="Top" Name="ProfilPlace" Margin="560, 10, 0, 0">
+                        </StackPanel>
+                    </Border>
 
-            </Grid>
-            <Button Grid.Column="1" HorizontalAlignment="Left" Margin="60,10,0,5" VerticalAlignment="Top" Background="White" BorderBrush="White">
-                <Image Source="Messages.png"></Image>
-            </Button>
-            <Grid x:Name="grid1" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" Background="#5676c0">
+                </Grid>
+                <Button Grid.Column="1" HorizontalAlignment="Left" Margin="60,10,0,5" VerticalAlignment="Top" Background="White" BorderBrush="White">
+                    <Image Source="Messages.png"></Image>
+                </Button>
+                <Grid x:Name="grid1" Grid.Column="0" Grid.Row="1" Background="#5676c0" Margin="0,0,0,-42">
 
-                <StackPanel VerticalAlignment="Top" Margin="0 50 0 0">
-                    <Button Height="50" Background="Transparent" BorderBrush="#5676c0">
-                        <TextBlock x:Name="textblock1" Text="🕓" Height="46" Width="46" Foreground="White"
+                    <StackPanel VerticalAlignment="Top" Margin="0 50 0 0">
+                        <Button Height="50" Background="Transparent" BorderBrush="#5676c0">
+                            <TextBlock x:Name="textblock1" Text="🕓" Height="46" Width="46" Foreground="White"
                                TextAlignment="Center"
                                FontSize="32"
                                Background="#5676c0"/>
-                    </Button>
-                    <Button Height="50" Background="Transparent" BorderBrush="#5676c0">
-                        <TextBlock Text="📈" Height="46" Width="46" Foreground="White"
+                        </Button>
+                        <Button Height="50" Background="Transparent" BorderBrush="#5676c0">
+                            <TextBlock Text="📈" Height="46" Width="46" Foreground="White"
                                TextAlignment="Center"
                                FontSize="32"
                                Background="#5676c0"/>
-                    </Button>
-                    <Button Height="50" Background="Transparent" BorderBrush="#5676c0" Click="Setting_Button_Click">
-                        <TextBlock Text="⚙️" Height="46" Width="46" Foreground="White"
+                        </Button>
+                        <Button Height="50" Background="Transparent" BorderBrush="#5676c0" Click="Setting_Button_Click">
+                            <TextBlock Text="⚙️" Height="46" Width="46" Foreground="White"
                                TextAlignment="Right"
                                FontSize="32"
                                Background="#5676c0"/>
-                    </Button>
-                    <Button Height="50" Background="Transparent" Foreground="White" BorderBrush="#5676c0">
-                        <TextBlock Text="❔" Height="46" Width="46"
+                        </Button>
+                        <Button Height="50" Background="Transparent" Foreground="White" BorderBrush="#5676c0">
+                            <TextBlock Text="❔" Height="46" Width="46"
                                TextAlignment="Center"
                                FontSize="32"
                                Background="#5676c0"/>
-                    </Button>
+                        </Button>
 
-                </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Button Grid.Column="2" HorizontalAlignment="Left" Margin="826,3,0,0" VerticalAlignment="Top" Width="28" Background="White" Height="28" BorderBrush="White" Name="CloseButton" Click="CloseButton_Click">
+                    <Image Source="Close.png" Height="25" Width="25"/>
+                </Button>
+
+                <Button Grid.Column="2" Content="—" HorizontalAlignment="Left" Margin="764,5,0,0" VerticalAlignment="Top" Width="30" Background="White" Height="25" BorderBrush="White" FontSize="15" Name="MinimizeButton" Click="MinimizeButton_Click">
+                </Button>
+
+                <Button Grid.Column="2"  HorizontalAlignment="Left" Margin="796,5,0,0" VerticalAlignment="Top" Width="30" Background="White" Height="25" BorderBrush="White" FontSize="15" x:Name="MaximizeButton" Click="MaximizeButton_Click">
+                    <Rectangle Height="19" Stroke="Black" Width="19">
+                    </Rectangle>
+
+                </Button>
+
             </Grid>
-        </Grid>
+        </Viewbox>
     </Border>
 </Window>
