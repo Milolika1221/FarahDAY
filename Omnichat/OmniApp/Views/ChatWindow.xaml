@@ -45,6 +45,7 @@
                 <TextBlock x:Name="ChatName" Text="Имя пользователя(клиента)"
                            FontSize="25"
                            HorizontalAlignment="Center"
+                           Margin="35, 15, 10, 10"
                            VerticalAlignment="Center" RenderTransformOrigin="0.504,2.009"/>
             </StackPanel>
             <Button x:Name="CloseButton" Width="150" HorizontalAlignment="Right"
