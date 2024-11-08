@@ -9,6 +9,7 @@ from task_classifier.task_classifier import TaskClassifier
 from text_generation.text_generator import TextGenerator
 import vk_api
 from flask_socketio import SocketIO, emit
+from engineio.async_drivers import gevent
 import smtplib
 import email
 from email.mime.text import MIMEText
@@ -16,8 +17,8 @@ from email.header import decode_header
 import subprocess
 import os
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-os.chdir(script_dir)
+#script_dir = os.path.dirname(os.path.abspath(__file__))
+#os.chdir(script_dir)
 
 HOST = '127.0.0.1'
 PORT = '5000'
@@ -25,7 +26,7 @@ if (len(sys.argv) > 1):
     HOST, PORT = sys.argv[1].split(":")
 URL = 'http://' + HOST + ':' + PORT
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, async_mode='gevent')
 users_data = []
 dbmanager = DBManager()
 taskclassifier = TaskClassifier()
@@ -192,4 +193,4 @@ def run_bots():
 
 if __name__ == '__main__':
     dbmanager.create_db()
-    socketio.run(app, host=HOST, port=PORT)
+    socketio.run(app, host=HOST, port=int(PORT))

@@ -4,7 +4,7 @@ import random
 
 class TextGenerator:
     def __init__(self):
-        self.dir_path = os.path.dirname(os.path.abspath(__file__))
+        self.dir_path = 'text_generation'
         
     def get_response(self, text, 
                     llama_path=None, 
