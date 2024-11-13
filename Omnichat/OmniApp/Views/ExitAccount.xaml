@@ -22,7 +22,7 @@
                         <RowDefinition Height="35"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Button x:Name="ButtonProfil" Background="#b1c1e7" BorderBrush="Transparent" Content="Выйти" Click="Button_Click" FontSize="15" Grid.ColumnSpan="2" Margin="58,10,58,0"/>
+                    <Button x:Name="ButtonProfil" Background="#b1c1e7" BorderBrush="Transparent" Content="Выйти" Click="ExitButton_Click" FontSize="15" Grid.ColumnSpan="2" Margin="58,10,58,0"/>
                 </Grid>
 
             </Border>
