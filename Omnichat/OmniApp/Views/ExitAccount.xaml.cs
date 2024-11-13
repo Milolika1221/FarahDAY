@@ -25,8 +25,16 @@ namespace OmniApp
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        Authorization authorization = new Authorization();
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
+            Window mainWindow = Window.GetWindow(this);
+            if (mainWindow != null)
+            {
+                authorization = new Authorization();
+                authorization.Show();
+                mainWindow.Close();
+            }
 
         }
     }
