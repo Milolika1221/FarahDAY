@@ -21,28 +21,30 @@ namespace OmniApp
     public partial class UserAccount : UserControl
     {
         private bool is_opened = false;
-        public UserAccount()
+        public UserAccount(string userName)
         {
             InitializeComponent();
+            UserName = userName;
+            ButtonProfil.Content = UserName;
         }
-
-
+        public string UserName { get; set; }
+        
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ExitAccount exitAccount = new ExitAccount();
             Button SND = sender as Button;
+            SND.Content = UserName;
             if (!is_opened)
             {
                 bord.Height = 80;
-                SND.Content = "Имя пользователя   ^";
                 ExitPlace.Children.Add(exitAccount);
             }
             else
             {
                 bord.Height = 40;
-                SND.Content = "Имя пользователя   V";
                 ExitPlace.Children.Remove(exitAccount);
-            }
+            }            
             is_opened = !is_opened;
         }
 
