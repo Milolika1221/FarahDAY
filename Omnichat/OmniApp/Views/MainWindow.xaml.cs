@@ -29,11 +29,12 @@ namespace OmniApp
         private bool flag = false;
         private double offset = 50;
         public ObservableCollection<Chat> Chats { get; set; }
-        public MainWindow()
+        public MainWindow(string userName)
         {
             InitializeComponent();
             CreateMenuElements();
-            UserAccount user = new UserAccount();
+            UserAccount user = new UserAccount(userName);
+            user.UserName = userName;
             ProfilPlace.Children.Add(user);
             HideElements();
             ServerConnection.RunBots();
